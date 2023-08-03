@@ -14,4 +14,16 @@ class Solver
 
     calculate(num, 1, num)
   end
+
+  def fizzbuzz(val)
+    if (val % 15).zero?
+      'fizzbuzz'
+    elsif (val % 3).zero?
+      'fizz'
+    elsif (val % 5).zero?
+      'buzz'
+    else
+      val.to_s
+    end
+  end
 end
