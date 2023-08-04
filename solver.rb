@@ -15,6 +15,10 @@ class Solver
     calculate(num, 1, num)
   end
 
+  def reverse(str)
+    str.reverse
+  end
+
   def fizzbuzz(val)
     if (val % 15).zero?
       'fizzbuzz'
