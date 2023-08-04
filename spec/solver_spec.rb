@@ -1,6 +1,13 @@
 require './solver'
 
 RSpec.describe Solver do
+  describe '#reverse' do
+    it "return 'olleh' when given 'hello'" do
+      solver = Solver.new
+      expect(solver.reverse('hello')).to eq('olleh')
+    end
+  end
+
   describe '#factorial' do
     it '10 factorial should equal 3628800' do
       solver = Solver.new
